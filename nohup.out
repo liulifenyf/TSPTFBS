@@ -1,0 +1,27 @@
+[W 08:11:53.937 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 08:11:53.955 NotebookApp] JupyterLab extension loaded from /home/lfliu/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 08:11:53.955 NotebookApp] JupyterLab application directory is /home/lfliu/anaconda3/share/jupyter/lab
+[I 08:11:53.956 NotebookApp] Serving notebooks from local directory: /home/lfliu/workspace/docker_py/CNN
+[I 08:11:53.956 NotebookApp] The Jupyter Notebook is running at:
+[I 08:11:53.956 NotebookApp] http://(localhost.localdomain or 127.0.0.1):8890/
+[I 08:11:53.956 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 08:11:57.315 NotebookApp] 404 GET /api/kernels/93cf2517-acae-41de-bc51-58a3b55ee858/channels?session_id=7bfe9a2cfa4c42c98e2749c39a928562 (172.16.160.249): Kernel does not exist: 93cf2517-acae-41de-bc51-58a3b55ee858
+[W 08:11:57.327 NotebookApp] 404 GET /api/kernels/93cf2517-acae-41de-bc51-58a3b55ee858/channels?session_id=7bfe9a2cfa4c42c98e2749c39a928562 (172.16.160.249) 17.76ms referer=None
+[I 08:11:59.556 NotebookApp] Saving file at /Untitled.ipynb
+[W 08:12:05.341 NotebookApp] Replacing stale connection: 93cf2517-acae-41de-bc51-58a3b55ee858:7bfe9a2cfa4c42c98e2749c39a928562
+[I 08:13:32.443 NotebookApp] Saving file at /Untitled.ipynb
+[I 08:13:34.290 NotebookApp] Saving file at /Untitled.ipynb
+[I 08:13:46.895 NotebookApp] Kernel started: 633c71a4-4734-4e38-872c-46471afcdd2a
+[I 08:13:49.844 NotebookApp] Kernel restarted: 633c71a4-4734-4e38-872c-46471afcdd2a
+[W 08:14:23.615 NotebookApp] 404 POST /api/kernels/93cf2517-acae-41de-bc51-58a3b55ee858/interrupt (172.16.160.249): Kernel does not exist: 93cf2517-acae-41de-bc51-58a3b55ee858
+[W 08:14:23.616 NotebookApp] Kernel does not exist: 93cf2517-acae-41de-bc51-58a3b55ee858
+[W 08:14:23.616 NotebookApp] 404 POST /api/kernels/93cf2517-acae-41de-bc51-58a3b55ee858/interrupt (172.16.160.249) 3.70ms referer=http://172.16.160.160:8890/notebooks/Untitled.ipynb?kernel_name=python3
+[W 08:14:26.683 NotebookApp] Replacing stale connection: 633c71a4-4734-4e38-872c-46471afcdd2a:1c03feb84da249039fea1d382207e157
+[I 08:14:26.711 NotebookApp] Starting buffering for 633c71a4-4734-4e38-872c-46471afcdd2a:1c03feb84da249039fea1d382207e157
+[I 08:14:26.712 NotebookApp] Restoring connection for 633c71a4-4734-4e38-872c-46471afcdd2a:1c03feb84da249039fea1d382207e157
+[I 08:15:46.891 NotebookApp] Saving file at /Untitled.ipynb
+[I 08:16:12.228 NotebookApp] Saving file at /Untitled.ipynb
+[I 08:16:13.289 NotebookApp] Saving file at /Untitled.ipynb
+[I 08:37:46.923 NotebookApp] Saving file at /Untitled.ipynb
+[I 08:39:46.861 NotebookApp] Saving file at /Untitled.ipynb
+[I 08:43:46.862 NotebookApp] Saving file at /Untitled.ipynb
