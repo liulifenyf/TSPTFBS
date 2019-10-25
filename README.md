@@ -35,5 +35,5 @@ CBF1,0.99839324
 ...
 
 ```
-*** Attention: Because each prediction will cover last predicted result. In case of confusing, you'd better delete the "output" folder after your restoring the prediction result.
+*** Attention: Because each prediction will cover last predicted result. In case of confusing, you'd better delete the "output" folder after you restoring the prediction result.
 
