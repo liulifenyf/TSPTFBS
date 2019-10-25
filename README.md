@@ -23,7 +23,7 @@ A FASTA sequence seems like below:
 CAAAAATAGAAATACCCACCACAGGAGCACGATGTTTTAATTGTATTTCTTTAGCAAGCTGCGCAGAAATTCGGCGGGGCATGTGTGGTGGTGCATTGCCACTTGCCGACGGGACGGCAGTTGCCGCGGTCTGCGCTGGTGGCAAATGCAGAAGGAAAACCGAGACTGTACTGGCATTTGTTGCTGACCACAAAGTTGGCG
 ```
 ### Output File
-According to the number of DNA sequences in your input file, our process will generate same number .csv files under "output" directory.the name of each file is the order of your DNA sequences.
+According to the number of DNA sequences in your input file, our process will generate same number .csv files under "output" folder.the name of each file is the order of your DNA sequences.
 Each file contains two columns, the first column is the name of the transposable factor, and the second column is the probability that the sequence is predicted to be the transposable factor, arranged in descending order.
 It seems like below:
 ```
@@ -33,4 +33,5 @@ RAP2.11,0.99881834
 RAP2.6,0.9987594000000001
 CBF1,0.99839324
 ```
+*** Attention: Because each prediction will cover last predicted result. In case of confusing, you'd better delete the "output" folder after your restore the prediction result.
 
