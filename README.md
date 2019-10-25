@@ -32,6 +32,8 @@ AT1G71450,0.9990287
 RAP2.11,0.99881834
 RAP2.6,0.9987594000000001
 CBF1,0.99839324
+...
+
 ```
 *** Attention: Because each prediction will cover last predicted result. In case of confusing, you'd better delete the "output" folder after your restoring the prediction result.
 
