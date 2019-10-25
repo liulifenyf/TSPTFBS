@@ -16,7 +16,7 @@ python ./py/predict.py <InputFile>
 ```
 your can also use 'python ./py/predict.py test.fa' command to view example.
 ### Input file
-The input file must be DNA sequences which have length 210bp and a format in FASTA.
+The input file must be DNA sequences which have a length of 210bp and a format in FASTA.
 A FASTA sequence seems like below:
 ```
 >chr2L:12715-12916
