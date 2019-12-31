@@ -10,12 +10,12 @@ git clone git@github.com:liulifenyf/Arabidopsis.tf.pred.git
 
 ```
 
-### how to use
+### How to use
 ```
 python ./py/predict.py <InputFile>
 ```
 your can also use 'python ./py/predict.py test.fa' command to view example.
-### Input file
+### Input File
 The input file must be DNA sequences which have a length of 210bp and a format in FASTA.
 A FASTA sequence seems like below:
 ```
