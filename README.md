@@ -10,7 +10,7 @@ git clone git@github.com:liulifenyf/Arabidopsis.tf.pred.git
 
 ```
 
-### How to use
+### How to Use
 ```
 python ./py/predict.py <InputFile>
 ```
