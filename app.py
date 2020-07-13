@@ -18,7 +18,7 @@ from werkzeug.datastructures import FileStorage
 import traceback ##
 import detection_function as detect
 
-
+dirpath = os.path.dirname(os.path.realpath(__file__))
 
 # 创建一个logger格式
 formatter = logging.Formatter('-%(asctime)s - %(levelname)s - %(message)s')
@@ -104,7 +104,7 @@ class Predict(Resource):
         soln['message'] = {"consequence": "请求成功"}
         logger.info(str(soln))
         logger.info("Program finished.")
-        return send_from_directory('/Arabidopsis.tf.pred',filename="result.csv",as_attachment=True)
+        return send_from_directory(dirpath, filename="result.csv", as_attachment=True)
 
 
 

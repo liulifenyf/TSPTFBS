@@ -12,28 +12,31 @@ git clone git@github.com:liulifenyf/Arabidopsis.tf.pred.git
 
 ### How to Use
 ```
-python ./py/predict.py <InputFile>
+cd Arabidopsis.tf.pred
+python app.py
 ```
-your can also use 'python ./py/predict.py test.fa' command to view example.
-### Input File
-The input file must be DNA sequences which have a length of 210bp and a format in FASTA.
+Type 127.0.0.1 or localhost in the browser（if in server， please type server id），upload your fasta file，wating for the calculation end, you can see the download button to get the predicted results file.
+we provide a test.fa file for testing.
+### uplode File
+The uplode file must be DNA sequences which have a length of 201bp and a format in FASTA.
 A FASTA sequence seems like below:
 ```
 >chr2L:12715-12916
 CAAAAATAGAAATACCCACCACAGGAGCACGATGTTTTAATTGTATTTCTTTAGCAAGCTGCGCAGAAATTCGGCGGGGCATGTGTGGTGGTGCATTGCCACTTGCCGACGGGACGGCAGTTGCCGCGGTCTGCGCTGGTGGCAAATGCAGAAGGAAAACCGAGACTGTACTGGCATTTGTTGCTGACCACAAAGTTGGCG
 ```
 ### Output File
-According to the number of DNA sequences in your input file, our process will generate same number .csv files under "output" folder.the name of each file is the order of your DNA sequences.
-Each file contains two columns, the first column is the name of the transposable factor, and the second column is the probability that the sequence is predicted to be the transposable factor, arranged in descending order.
-It seems like below:
+The output file will seems like below, first column represents the name of TFs, follow columns are the probabilities of DNA sequence to be predicted as a TF binding site:
 ```
-ERF7,0.9990957
-AT1G71450,0.9990287
-RAP2.11,0.99881834
-RAP2.6,0.9987594000000001
-CBF1,0.99839324
+Factor Name	chr2L:12715-12916	chr2L:59143-59344
+AT3G10113	5.8268368E-05	0.00023753107
+AT3G12130	0.0003848466	0.077134416
+AT3G52440	0.6031477	0.42776716
+AT3G12730	0.0059271543	0.03132692
+AT3G60580	0.05004888	0.012927864
+AT3G60490	0.86310613	0.8729982
+AT4G00250	0.13277796	0.2112361
+AT3G24120	0.011899605	0.052325442
+AT3G09600	0.0072161327	0.016331125
 ...
 
 ```
-*** Attention: Because each prediction will cover last predicted result. In case of confusing, you'd better delete the "output" folder after you restoring the prediction result.
-
