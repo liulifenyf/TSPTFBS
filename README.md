@@ -13,16 +13,19 @@ git clone git@github.com:liulifenyf/Arabidopsis.tf.pred.git
 ### How to Use
 ```
 cd Arabidopsis.tf.pred
-python app.py
+python app.py <input file>
 ```
 Type 127.0.0.1 or localhost in the browser（if in server， please type server id），upload your fasta file，wating for the calculation end, you can see the download button to get the predicted results file.
 we provide a test.fa file for testing.
-### uplode File
+### input File
 The uplode file must be DNA sequences which have a length of 201bp and a format in FASTA.
 A FASTA sequence seems like below:
 ```
 >chr2L:12715-12916
 CAAAAATAGAAATACCCACCACAGGAGCACGATGTTTTAATTGTATTTCTTTAGCAAGCTGCGCAGAAATTCGGCGGGGCATGTGTGGTGGTGCATTGCCACTTGCCGACGGGACGGCAGTTGCCGCGGTCTGCGCTGGTGGCAAATGCAGAAGGAAAACCGAGACTGTACTGGCATTTGTTGCTGACCACAAAGTTGGCG
+>chr2L:59143-59344
+TAGACCGCCTGACAAGTTCGGGTGACCATCGAGCGTCTCTGCTTACCGTGCGCTTAAGCGAACCACACGTCCTAATCGAAACAACTATACAGCGCGACTGTGCGGACGAGTGTCTTGAGACTCTGGGCAAGCGCAGCCAGCCAACCAAGTTTCGAAGTCTGGCTTTTGGGCCAAGCTTGGTCTGCGCCACGCTTGGCCCCG
+
 ```
 ### Output File
 The output file will seems like below, first column represents the name of TFs, follow columns are the probabilities of DNA sequence to be predicted as a TF binding site:
