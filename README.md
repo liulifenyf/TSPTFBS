@@ -6,8 +6,10 @@ This program allows for:
 ### Dependencies
 The program requires:
   * python 3.6
-  * tensorflow2.0.0
-  * keras2.3.1
+  * tensorflow2.0.0 module
+  * keras2.3.1 module
+  * pandas module
+  * numpy module
   * scikit-learn module
   * TAIR10 reference genome
   * the [bedtools](https://bedtools.readthedocs.io/en/latest/) software
@@ -17,7 +19,11 @@ git clone git@github.com:liulifenyf/Arabidopsis.tf.pred.git
 
 ```
 
-### How to Use
+### Tutorial
+## Training
+By running the train.py process directly, ABF2 will be used as an example to run the training program and generate a folder for saving the newly trained model and training results.Modify the file path of TFBS in the training program to realize the training of another TF.
+*** before training, remember to generate the fa file of TFs with bedtools.
+## Predicting
 ```
 cd Arabidopsis.tf.pred
 python Predict.py <input fasta file>
