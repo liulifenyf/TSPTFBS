@@ -21,16 +21,15 @@ git clone git@github.com:liulifenyf/Arabidopsis.tf.pred.git
 
 ### Tutorial
 ## Training
-By running the train.py process directly, ABF2 will be used as an example to run the training program and generate a folder for saving the newly trained model and training results.Modify the file path of TFBS in the training program to realize the training of another TF.
-*** before training, remember to generate the fa file of TFs with bedtools.
+By running the train.py process directly, ABF2 will be used as an example to run the training program and generate a folder for saving the newly trained model and training results.Modify the file path of TFBS in the training program to realize the training of another TF. Before training, remember to generate the fa file of TFs with bedtools.
 ## Predicting
 ```
 cd Arabidopsis.tf.pred
 python Predict.py <input fasta file>
 ```
-After the program runs, a result.csv file will be generated in the current folder to record the prediction results of the models.
+After the program runs, a result.csv file will be generated in the current folder which record the prediction results of the models.
 we provide a test.fa file for testing.
-### input File
+### Input File Format
 The uplode file must be DNA sequences which have a length of 201bp and a format in FASTA.
 A FASTA sequence seems like below:
 ```
@@ -40,7 +39,7 @@ CAAAAATAGAAATACCCACCACAGGAGCACGATGTTTTAATTGTATTTCTTTAGCAAGCTGCGCAGAAATTCGGCGGGGC
 TAGACCGCCTGACAAGTTCGGGTGACCATCGAGCGTCTCTGCTTACCGTGCGCTTAAGCGAACCACACGTCCTAATCGAAACAACTATACAGCGCGACTGTGCGGACGAGTGTCTTGAGACTCTGGGCAAGCGCAGCCAGCCAACCAAGTTTCGAAGTCTGGCTTTTGGGCCAAGCTTGGTCTGCGCCACGCTTGGCCCCG
 
 ```
-### Output File
+### Output File Format
 The output file will seems like below, first column represents the name of TFs, follow columns are the probabilities of DNA sequence to be predicted as a TF binding site:
 ```
 Factor Name	chr2L:12715-12916	chr2L:59143-59344
