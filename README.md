@@ -1,6 +1,9 @@
 # Arabidopsis.tf.pred
-## Get started
-### Requires
+## Python program for predicting TFBS for 265 TF
+This program allows for:
+  1.Repeat Traning process for 265 TFs
+  2.Predciting TFBS for given fasta file
+### Dependencies
 - [python](http://www.python.org/downloads/)>=3.5
 - python modules: tensorflow; keras; sklearn.
 
