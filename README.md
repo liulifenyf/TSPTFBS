@@ -1,8 +1,8 @@
 # Arabidopsis.tf.pred
 ## Python program for predicting TFBS for 265 TFs
 This program allows for:
-  1.Repeat Traning process of 265 TFs
-  2.Predciting TFBS for given fasta file
+    1.Repeat Traning process of 265 TFs
+    2.Predciting TFBS for given fasta file
 ### Dependencies
 The program requires:
   * python 3.6
