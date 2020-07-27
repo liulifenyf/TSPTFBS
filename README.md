@@ -2,7 +2,7 @@
 ## Get started
 ### Requires
 - [python](http://www.python.org/downloads/)>=3.5
-- python modules: reference requirements.txt file
+- python modules: tensorflow; keras; sklearn.
 
 ### Install
 ```
@@ -13,9 +13,9 @@ git clone git@github.com:liulifenyf/Arabidopsis.tf.pred.git
 ### How to Use
 ```
 cd Arabidopsis.tf.pred
-python app.py <input file>
+python Predict.py <input fasta file>
 ```
-Type 127.0.0.1 or localhost in the browser（if in server， please type server id），upload your fasta file，wating for the calculation end, you can see the download button to get the predicted results file.
+After the program runs, a result.csv file will be generated in the current folder to record the prediction results of the models.
 we provide a test.fa file for testing.
 ### input File
 The uplode file must be DNA sequences which have a length of 201bp and a format in FASTA.
