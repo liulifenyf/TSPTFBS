@@ -1,8 +1,5 @@
-# Arabidopsis.tf.pred
-## Python program for predicting TFBS for 265 TFs
-This program allows for:  
-    1. Repeat Traning process of 265 TFs  
-    2. TFBS for given fasta file  
+# TSPTFBS
+## Python programs for predicting TFBS for 265 Arabidopsis TFs
 ## Dependencies
 The program requires:
   * python 3.6
@@ -15,23 +12,21 @@ The program requires:
   * the [bedtools](https://bedtools.readthedocs.io/en/latest/) software
 ## Install
 ```
-git clone git@github.com:liulifenyf/Arabidopsis.tf.pred.git
+git clone git@github.com:liulifenyf/TSPTFBS.git
 
 ```
 
 ## Tutorial
-### Training
-By running the train.py process directly, ABF2 will be used as an example to run the training program and generate a folder for saving the newly trained model and training results.Modify the file path of TFBS in the training program to realize the training of another TF. Before training, remember to generate the fa file of TFs with bedtools.
 ### Predicting
 ```
-cd Arabidopsis.tf.pred
+cd TSPTFBS
 python Predict.py <input fasta file>
 ```
-After the program runs, a result.csv file will be generated in the current folder which record the prediction results of the models.
-we provide a test.fa file for testing.
+After running the program, a file named 'result.csv' will be generated in the current folder which records the prediction results of the models.
+we here provide a test.fa file for an example:
 ## Input File Format
-The uplode file must be DNA sequences which have a length of 201bp and a format in FASTA.
-A FASTA sequence seems like below:
+The uplode file must be DNA sequences which have a length of 201bp with a FASTA format.
+A FASTA file seems like below:
 ```
 >chr2L:12715-12916
 CAAAAATAGAAATACCCACCACAGGAGCACGATGTTTTAATTGTATTTCTTTAGCAAGCTGCGCAGAAATTCGGCGGGGCATGTGTGGTGGTGCATTGCCACTTGCCGACGGGACGGCAGTTGCCGCGGTCTGCGCTGGTGGCAAATGCAGAAGGAAAACCGAGACTGTACTGGCATTTGTTGCTGACCACAAAGTTGGCG
@@ -40,9 +35,9 @@ TAGACCGCCTGACAAGTTCGGGTGACCATCGAGCGTCTCTGCTTACCGTGCGCTTAAGCGAACCACACGTCCTAATCGAA
 
 ```
 ## Output File Format
-The output file will seems like below, first column represents the name of TFs, follow columns are the probabilities of DNA sequence to be predicted as a TF binding site:
+The output file will seems like below: the first column represents the names of 265 Arabidopsis TFs, the remaining columns (The example has two remaining columns because the input file has two enquired DNA sequences) record the probabilities of given DNA sequences to be predicted as a TFBS of one of 265 Arabidopsis TFs.
 ```
-Factor Name	chr2L:12715-12916	chr2L:59143-59344
+TF Name	chr2L:12715-12916	chr2L:59143-59344
 AT3G10113	5.8268368E-05	0.00023753107
 AT3G12130	0.0003848466	0.077134416
 AT3G52440	0.6031477	0.42776716
