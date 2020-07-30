@@ -38,7 +38,7 @@ TAGACCGCCTGACAAGTTCGGGTGACCATCGAGCGTCTCTGCTTACCGTGCGCTTAAGCGAACCACACGTCCTAATCGAA
 
 ```
 ## Output File Format
-The output file will seems like below: the first column represents the names of 265 Arabidopsis TFs, the remaining columns (The example has two remaining columns because the input file has two enquired DNA sequences) record the probabilities of given DNA sequences to be predicted as a TFBS of one of 265 Arabidopsis TFs.
+The output file will seem like below: the first column represents the names of 265 Arabidopsis TFs, the remaining columns (The example has two remaining columns because the input file has two enquired DNA sequences) record the probabilities of given DNA sequences to be predicted as a TFBS of one of 265 Arabidopsis TFs.
 ```
 TF Name	chr2L:12715-12916	chr2L:59143-59344
 AT3G10113	5.8268368E-05	0.00023753107
