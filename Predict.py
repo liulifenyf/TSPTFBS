@@ -66,7 +66,7 @@ def predict(sample_to_predict, models):
 def write2file(result_array, seq_id):
     result_DF = pd.DataFrame(result_array).T
     #result_DF.pop(0)
-    result_DF.columns =  ['Factor Name']+seq_id
+    result_DF.columns =  ['TF Name']+seq_id
     result_DF.to_csv('result.csv',index=False)
 
 
