@@ -28,7 +28,7 @@ We here provide a test.fa file for an example:
 python Predict.py test.fa
 ```
 ## Input File Format
-The uplode file must be DNA sequences which have a length of 201bp with a FASTA format.
+The input file must contain DNA sequences which have a length of 201bp with a FASTA format.
 A FASTA file seems like below:
 ```
 >chr2L:12715-12916
