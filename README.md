@@ -23,7 +23,7 @@ cd TSPTFBS
 python Predict.py <input fasta file>
 ```
 After running the program, a file named 'result.csv' will be generated in the current folder which records the prediction results of the models.
-we here provide a test.fa file for an example:
+We here provide a test.fa file for an example:
 ## Input File Format
 The uplode file must be DNA sequences which have a length of 201bp with a FASTA format.
 A FASTA file seems like below:
